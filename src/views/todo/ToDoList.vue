@@ -13,7 +13,7 @@ const handleClick = (index: number) => {
 
 <template>
   <h1>一覧</h1>
-  <p v-if="todos.length === 0">ToDoがありません。</p>
+  <p v-if="todos.length === 0" data-testid="no-todo-list">ToDoがありません。</p>
   <div
     v-else
     v-for="(todo, index) in todos"
