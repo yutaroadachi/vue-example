@@ -17,12 +17,12 @@ const handleClick = (index: number) => {
   <div
     v-else
     v-for="(todo, index) in todos"
-    v-bind:key="`${todo.title}-${index}`"
+    :key="`${todo.title}-${index}`"
     class="todo"
   >
     <h2>{{ todo.title }}</h2>
     <p>{{ todo.memo === "" ? "--" : todo.memo }}</p>
-    <button v-on:click="() => handleClick(index)">削除</button>
+    <button @click="() => handleClick(index)">削除</button>
   </div>
 </template>
 

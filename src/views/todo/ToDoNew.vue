@@ -31,7 +31,7 @@ const handleClick = () => {
       <label for="memo"> メモ:&nbsp;</label>
       <textarea id="memo" v-model="todo.memo" />
     </div>
-    <button type="button" v-on:click="handleClick" :disabled="disabled">
+    <button type="button" @click="handleClick" :disabled="disabled">
       作成
     </button>
   </form>

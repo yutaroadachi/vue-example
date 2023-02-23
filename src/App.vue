@@ -6,8 +6,8 @@ import { RouterLink, RouterView } from "vue-router";
   <header>
     <div>ToDo</div>
     <nav>
-      <RouterLink v-bind:to="{ name: 'ToDoList' }">一覧</RouterLink>
-      <RouterLink v-bind:to="{ name: 'ToDoNew' }">新規作成</RouterLink>
+      <RouterLink :to="{ name: 'ToDoList' }">一覧</RouterLink>
+      <RouterLink :to="{ name: 'ToDoNew' }">新規作成</RouterLink>
     </nav>
   </header>
   <main>
